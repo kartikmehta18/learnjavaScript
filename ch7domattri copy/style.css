@@ -1,0 +1,16 @@
+/* #box{
+    height: 200px;
+    width:100px;
+    background-color: burlywood;
+    color: rgb(206, 252, 0);
+    border : 1px dashed black;
+    box-shadow: 2px 2px 1px rgb(74, 74, 74);
+} */
+
+.content{
+    color: red;
+
+}
+.newClass{
+    background-color: green;
+}
