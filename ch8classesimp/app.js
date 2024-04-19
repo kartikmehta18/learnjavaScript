@@ -81,7 +81,8 @@ class person {
         console.log("sleep");
     }
 
-}
+} 
+
 
 class Engineer extends person {
     work(){
