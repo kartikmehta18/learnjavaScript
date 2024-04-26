@@ -100,3 +100,46 @@ p1.then((res)=>{
   })
   .then((res2)=>{
    return getData(4);});
+
+   //async awate
+function api(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        console.log("weather");
+        resolve(200);
+    },2000)
+    });
+}
+async function getWeatherData(){
+    await api(); //1 call
+    await api(); //2 call
+}
+
+
+// ex 2  async await( pause the execution surrounging async fun until promise settle) it is always return promise
+
+
+function getDataa(dataId ){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+       console.log("data",dataId);
+       resolve("success");
+        },2000) ;
+    });
+  }
+
+  async function  getAllDataa(){
+    console.log("getting data 1..");
+    await  getDataa(1);
+    console.log("getting data 2..");
+    await  getDataa(2);
+  }
+//or
+
+  //IIFE(imidiately invoke function)  in this we dont want to call any function 
+  (async function (){
+    console.log("getting data 1..");
+    await  getDataa(6);
+    console.log("getting data 2..");
+    await  getDataa(5);
+  })();
