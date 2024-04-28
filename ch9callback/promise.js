@@ -1,39 +1,41 @@
 //promises  is a object two handlers which is resolve and reject
-//  let promise= new Promise((resolve,reject)=>{
-//     console.log("i am a promise");
-//     resolve("success")
-//  });
+ let promise= new Promise((resolve,reject)=>{
+    console.log("i am a promise");
+    resolve("success")
+ });
 
 
 
-//  function getData(dataId ,getNextData){
-//     return new Promise((resolve,reject)=>{
-//         setTimeout(()=>{
-//        console.log("data",dataId);
-//        resolve("success");
-//          if (getNextData){
-//              getNextData();
-//          }
-//         },5000) ;
-//     });
-//   }
+ function getData(dataId ,getNextData){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+       console.log("data",dataId);
+       resolve("success");
+         if (getNextData){
+             getNextData();
+         }
+        },5000) ;
+    });
+  }
 
-// const getPromise =()=>{
-//    return new Promise((resolve,reject)=>{
-//         console.log("i am a proise");
-//         resolve("succes");// reject("succes");
-//     });
-// };
+const getPromise =()=>{
+   return new Promise((resolve,reject)=>{
+        console.log("i am a proise");
+        resolve("succes");// reject("succes");
+    });
+};
 
-// let promise = getPromise();
-// setTimeout(()=>{promise.then(()=>{
-//     console.log("promise fuldilled");
-// });
-// },2000);
+let promise = getPromise();
+setTimeout(()=>{promise.then(()=>{
+    console.log("promise fulfilled");
+});
 
-// promise.catch(()=>{
-//     console.log("error");
-// });
+
+},2000);
+
+promise.catch(()=>{
+    console.log("error");
+});
 
 // promise chain
 
