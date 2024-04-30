@@ -1,4 +1,5 @@
 const URL =" https://cat-fact.herokuapp.com/facts";
+
 const factPara = document.getElementById("fact");
 const btn =document.querySelector("#b");
 
