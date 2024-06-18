@@ -21,7 +21,7 @@ let obj = {
 let output= `The cost of ${obj.item} is ${obj.price} rupee`; // `Template litera {expression} string`
 console.log(output);
 console.log("The cost of" ,obj.item , "is", obj.price);
-let out= `The cost of ${1+2+3} `; // Template litera (we also add string) string
+let out= `The cost of ${1+2+3}`; // Template litera (we also add string) string
 console.log(out);
 
 // stringss methods = is a block of code

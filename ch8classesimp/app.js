@@ -68,7 +68,7 @@ class parent {
 class Child extends parent{}
 
 let obj = new Child();
-//ex 2   [if child & parent have same method, child method will be used (Methos overridind)]
+//ex 2   [if child & parent have same method, child method will be used (Methos overriding)]
 
 class person {
     constructor(){
