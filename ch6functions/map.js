@@ -23,7 +23,7 @@ console.log(evenArr);
 let arr1 = [5,6,2,1,3];
 const output =arr1.reduce((prev,curr)=>{
 return prev+curr;
-});
+})
 console.log(output);
 
 
